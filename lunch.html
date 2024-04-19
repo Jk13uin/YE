@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yum!Eats!!</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, cuisine, eat">
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="showAllCategory('lunch')">
+  <header class="header-area">
+    <div class="container">
+        <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="yumLogo.jpg" alt="logo"></a></div>
+        <div class="logo-text"><a href="index.html">Yum!Eats!!</a></div>
+        </div>
+        <div class="navbar-area">
+          <nav class="navbar" id="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="breakfast.html">Breakfast</a></li>
+              <li><a href="lunch.html" class="active">Lunch</a></li>
+              <li><a href="dinner.html">Dinner</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="login.html">Login </a></li>
+            </ul>
+          </nav>
+        </div>
+  </header>
+
+  <main>
+    <section class="banner" id="lunch-banner">
+    <br>
+        <div class="info">
+          <h1  class="underline" style="color: white;"">Lunch</h1>
+          <br>
+          <br>
+          <h2 style="color: black;">A feast for the eyes as well as the stomach!</h2>
+        </div>
+    </section>
+    <br>
+    <br> 
+    <br>
+    <div class="content">
+      <div class="filters">
+        <a href="#recipe-list" class="filter" id="pasta" onmousedown="showAll('pasta')">pasta</a>
+        <a href="#recipe-list" class="filter" id="salads" onmousedown="showAll('salads')">salads</a>
+        <a href="#recipe-list" class="filter" id="sandwiches" onmousedown="showAll('sandwiches')">sandwiches</a>
+        <a href="#recipe-list" class="filter" id="treats" onmousedown="showAll('treats')">treats</a>
+      </div>
+    </div>
+    <section id="recipe-list">
+
+    </section>
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+ 
+ <footer>
+    <p style="color: white;">&copy; 2024 Yum!Eats!! All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src=" responsive.js"></script>
+  </script>
+</body>
+
+</html>

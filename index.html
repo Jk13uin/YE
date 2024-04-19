@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yum!Eats</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, deserts, random meals">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="homepage"
+  onload="loadHomePage('random'); loadHomePage('lunch'); loadHomePage('dessert'); loadHomePage('dinner');">
+  <div class="banner"></div>
+  <header class="header-area">
+    <div class="container">
+      <div class="logo" id="logo">
+        <div class="logo-image"><a href="index.html"><img src="yumLogo.jpg" alt="logo"></a></div>
+        <div class="logo-text"><a href="index.html">Yum!Eats!!</a></div>
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="login.html">Login </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="banner" id="home-banner">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="info">
+        <h1 class="underline">Lead the kitchen!</h1> <br>
+        <h2 class="underline">A recipe has no soul. You as the cook must bring soul to the recipe!</h2> <br>
+        <p class="underline">Set out on your next kitchen adventure !</p>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="list" id="random-recipes">
+      <h1>Check these out!!</h1>
+      <div id="random" loadHomePage('random');>
+      </div>
+    </section>
+
+    <section style= background-color:#DAF5FF;>
+      <h1>Our Goal</h1>
+      <br>
+      <h2>Here at Yum!Eats!! our goal is to inspire culinary exploration and creativity by providing a rich assortment of recipes for every palate and occasion. From tantalizing desserts to savory main courses and refreshing beverages, our curated collection offers something delightful for every taste bud. We aim to be more than just a recipe repository; we aspire to be a trusted culinary companion, guiding our visitors through flavorful journeys and empowering them to unleash their inner chef. Whether you're a seasoned cook looking for new inspiration or a novice eager to embark on your culinary adventure, Yum!Eats!! is here to elevate your kitchen experience and make every meal a memorable celebration of taste and ingenuity.</h2>
+    </section>
+
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  <p style="color: white;">&copy; 2024 Yum!Eats!! All rights reserved.</p>
+</footer>
+</html>

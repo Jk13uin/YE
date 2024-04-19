@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yum!Eats!!</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, cuisine, eat">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="showAllCategory('desserts')">
+  <header class="header-area">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="yumLogo.jpg" alt="logo"></a></div>
+        <div class="logo-text"><a href="index.html">Yum!Eats!!</a></div>
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="dessert.html" class="active">Dessert</a></li>
+            <li><a href="login.html">Login </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="desserts-banner">
+      <div class="content">
+        <div class="info">
+          <br>
+          <h1 style="color: white;" >Desserts</h1>
+          <br>
+          <h2 style="color: black;">Treats that satisfy your sweet tooth!</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipe-list">
+    </section>
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+<footer>
+  <p style="color: white;">&copy; 2024 Yum!Eats!! All rights reserved.</p>
+</footer>
+
+</html>
